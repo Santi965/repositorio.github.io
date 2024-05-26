@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="semana1.html" onclick="seleccionar()">SEM1</a></li>
+                    <li><a href="semana2.html" onclick="seleccionar()">SEM2</a></li>
+                    <li><a href="semana3.html" onclick="seleccionar()">SEM3</a></li>
+                    <li><a href="semana4.html" onclick="seleccionar()">SEM4</a></li>
+                    <li><a href="semana5.html" onclick="seleccionar()">SEM5</a></li>
+                    <li><a href="semana6.html" onclick="seleccionar()">SEM6</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION definicion o introduccion -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SEM 6 - REACT</h2>
+            <p class="justificado"><span>React es una biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario interactivas y reutilizables.</span> Desarrollada por Facebook, React se destaca por su enfoque en la creación de componentes reutilizables y su eficiencia en la actualización del DOM.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Componentes</h3>
+                    <ul>
+                        <li>
+                            <strong>Componentes funcionales:</strong>
+                            Estos son componentes que se definen como funciones de JavaScript y se utilizan para representar la interfaz de usuario de manera más simple y concisa.
+                        </li>
+                        <li>
+                            <strong>Componentes de clase:</strong>
+                            Estos son componentes que se definen como clases de JavaScript y tienen un estado interno y métodos de ciclo de vida que les permiten manejar la lógica y el estado de la interfaz de usuario.
+                        </li>
+                        <li>
+                            <strong>Componentes de orden superior (HOC):</strong>
+                            Son componentes que toman un componente y retornan otro componente, agregando funcionalidades adicionales al componente original.
+                        </li>
+                        <li>
+                            <strong>Componentes de renderización condicional:</strong>
+                            Permiten renderizar diferentes elementos o componentes en función de una condición específica, lo que proporciona flexibilidad en la presentación de la interfaz de usuario.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Componente principal -->
+                <div class="col">
+                    <h3>Principal Componente</h3>
+                    <div class="contenedor-intereses">
+                        <p class="justificado">El componente principal en React es el "componente". Un componente en React es una pieza de la interfaz de usuario que puede contener HTML, CSS y JavaScript, y puede ser reutilizado en múltiples partes de una aplicación.</p>
+                        <img src="https://fullstackseries.com/wp-content/uploads/2019/03/diagrama-ciclo-de-vida.png" alt="Imagen HTML" class="imagen">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+    <!-- SECCION COMPONENTES -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Características</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3></h3>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Virtual DOM</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">React utiliza un Virtual DOM para mejorar la eficiencia en la actualización del DOM. Esto significa que React compara los cambios en el estado de la aplicación con una representación virtual de la interfaz de usuario y solo actualiza los elementos que han cambiado, en lugar de volver a renderizar toda la página.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Reutilización de componentes</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Fomenta la reutilización de componentes, lo que permite crear una interfaz de usuario consistente y fácil de mantener al dividir la interfaz en componentes más pequeños y reutilizables.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Unidireccionalidad de datos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">React sigue el principio de "unidireccionalidad de datos", lo que significa que los datos fluyen en una sola dirección a través de la aplicación, lo que facilita la comprensión y el mantenimiento del estado de la aplicación.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Componentes controlados</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">En React, los componentes controlados son aquellos cuyo estado está controlado por React en lugar del DOM. Esto permite una manipulación más precisa y consistente de los datos en la aplicación.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">React Hooks</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Los Hooks son una característica introducida en React que permite a los desarrolladores usar el estado y otros aspectos de React en componentes funcionales, lo que simplifica el manejo del estado y la lógica de los componentes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Renderizado del lado del servidor</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">React permite el renderizado del lado del servidor, lo que significa que las aplicaciones pueden renderizarse en el servidor y enviarse al navegador como HTML estático, lo que mejora la velocidad de carga y el SEO.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Reflexión -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>REFLEXIÓN</h2>
+            <p class="justificado"><span>React ha revolucionado la forma en que se desarrollan interfaces de usuario en la web al proporcionar un enfoque modular y eficiente para la construcción de aplicaciones interactivas y reactivas.</span> Su énfasis en la reutilización de componentes, la eficiencia en la actualización del DOM y la unidireccionalidad de datos lo convierten en una opción poderosa y popular para el desarrollo web moderno. Y tres cosas que no debes olvidar es:</p>
+
+            <div class="galeria">
+                <!--Comienzo de las imagenes-->
+                <div class="proyecto">
+                    <img src="https://coursework.vschool.io/content/images/2017/09/wireframe_deconstructed.png" alt="">
+                    <div class="overlay">
+                        <h3>Los Componentes reutilizables en React</h3>
+                        <p>Se pueden utilizar en múltiples lugares dentro de una aplicación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://miro.medium.com/v2/resize:fit:2000/1*wHAx1KnP7obeybFXsL7-NA.png" alt="">
+                    <div class="overlay">
+                        <h3>La Eficiencia del Virtual DOM</h3>
+                        <p>Permite a React actualizar solo las partes del DOM real que han cambiado en lugar de volver a renderizar toda la página</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://miro.medium.com/v2/resize:fit:1166/1*bqtyARlwzJtp9XTWjM3quQ.png" alt="">
+                    <div class="overlay">
+                        <h3>Uso de React Hooks</h3>
+                        <p>Para simplificar el manejo del estado y la lógica de los componentes.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONCLUSIÓN</h2>
+            <p class="justificado">React ha cambiado la forma en que los desarrolladores construyen aplicaciones web al proporcionar un enfoque modular, eficiente y reutilizable para la creación de interfaces de usuario interactivas y dinámicas. Su popularidad y su gran comunidad de desarrolladores lo convierten en una herramienta invaluable para el desarrollo web moderno.</p>
+            <p class="frase"><samp>"Con React, la construcción de interfaces de usuario interactivas y reutilizables nunca ha sido más fácil y eficiente, impulsando la innovación en el desarrollo web."</samp></p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="semana1.html" onclick="seleccionar()">SEM1</a></li>
+                    <li><a href="semana2.html" onclick="seleccionar()">SEM2</a></li>
+                    <li><a href="semana3.html" onclick="seleccionar()">SEM3</a></li>
+                    <li><a href="semana4.html" onclick="seleccionar()">SEM4</a></li>
+                    <li><a href="semana5.html" onclick="seleccionar()">SEM5</a></li>
+                    <li><a href="semana6.html" onclick="seleccionar()">SEM6</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION definicion o introduccion -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SEM 3 - FRONT-END CON LIBRERÍAS</h2>
+            <p class="justificado"><span>En el panorama del desarrollo web front-end, las librerías de estilo como CSS, Bootstrap y Tailwind juegan roles cruciales al definir la apariencia y la interactividad de las páginas web. </span>CSS, siendo el lenguaje fundamental de estilo, ofrece una flexibilidad total para la personalización de la presentación. Bootstrap, por otro lado, proporciona un conjunto completo de componentes y estilos predefinidos, lo que agiliza el proceso de desarrollo y garantiza una apariencia consistente en todas las páginas. Tailwind, con su enfoque basado en clases, permite una personalización detallada y modular, facilitando la creación de interfaces web altamente personalizadas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Definiciones</h3>
+                    <ul>
+                        <li>
+                            <strong>CSS:</strong>
+                            Lenguaje de estilo utilizado para definir la presentación de documentos HTML.
+                        </li>
+                        <li>
+                            <strong>Bootstrap:</strong>
+                            Framework de código abierto para desarrollo web front-end, que incluye plantillas de diseño basadas en HTML y CSS.
+                        </li>
+                        <li>
+                            <strong>Tailwind:</strong>
+                            Framework de utilidad CSS que proporciona clases predefinidas para estilizar elementos HTML.
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Componente principal -->
+                <div class="col">
+                    <h3>Uso más conveniente</h3>
+                    <div class="contenedor-intereses">
+                        <p class="justificado">La elección entre CSS, Bootstrap y Tailwind depende del contexto y las necesidades del proyecto. <span>CSS es ideal para personalización total, mientras que Bootstrap ofrece rápidas soluciones predefinidas. Por otro lado, Tailwind permite un alto grado de personalización manteniendo la eficiencia en el desarrollo.</span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1596188355426/el5akwar9.png" alt="Imagen HTML" class="imagen">
+        </div>
+    </section>
+
+   
+
+    <!-- SECCION COMPONENTES -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Comparación</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Ventajas</h3>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">CSS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Ofrece máxima flexibilidad y control sobre el diseño y la presentación de la página. Permite la creación de estilos personalizados para adaptarse a cualquier diseño imaginado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Bootstrap</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Proporciona un conjunto completo de componentes y estilos predefinidos que agilizan el desarrollo web. Facilita la creación de interfaces consistentes y receptivas, sin necesidad de escribir mucho CSS personalizado.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Tailwind</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Permite una personalización detallada y modular a través de su sistema de clases utilitarias. Facilita la creación de diseños únicos y altamente optimizados, con un control preciso sobre cada elemento de la interfaz.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Implementación</h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">CSS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Se implementa escribiendo directamente en los archivos CSS del proyecto, proporcionando estilos personalizados para cada elemento de la página.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Bootstrap</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Se implementa integrando la biblioteca Bootstrap en el proyecto y utilizando sus clases predefinidas en el HTML para estilizar los elementos de la interfaz.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Tailwind</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Se implementa agregando Tailwind como dependencia al proyecto y utilizando sus clases utilitarias directamente en el HTML para definir estilos y diseños.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Reflexión -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>REFLEXIÓN</h2>
+            <p class="justificado"><span>Al trabajar con librerías de estilo en el desarrollo web, es esencial recordar que la consistencia, el rendimiento y la accesibilidad son aspectos fundamentales para garantizar una experiencia de usuario óptima. </span> Mantener una estructura coherente en el código, optimizar el rendimiento de la página y priorizar la accesibilidad para todos los usuarios son prácticas que deben permanecer en el centro de cualquier proyecto de desarrollo web. Es crucial recordar: </p>
+
+            <div class="galeria">
+                <!--Comienzo de las imagenes-->
+                <div class="proyecto">
+                    <img src="https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/css-3-512.png" alt="">
+                    <div class="overlay">
+                        <h3>CSS</h3>
+                        <p>Mantener una estructura coherente en el código, priorizando la modularidad y la reutilización de estilos.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://epss.ucla.edu/static/bootstrap-5.2.0/site/static/docs/5.2/assets/brand/bootstrap-social-logo.png" alt="">
+                    <div class="overlay">
+                        <h3>Bootstrap</h3>
+                        <p>Aprovechar al máximo la flexibilidad y extensibilidad de los componentes de Bootstrap para adaptarse a los requisitos específicos del proyecto.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://files.raycast.com/nwt9ncojkvwmjfkaada8upafvpnu" alt="">
+                    <div class="overlay">
+                        <h3>Tailwind</h3>
+                        <p>Optimizar el uso de las clases utilitarias de Tailwind para mantener un código limpio y fácil de mantener.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONCLUSIÓN</h2>
+            <p class="justificado">En la diversidad de librerías para el desarrollo web front-end, la clave reside en comprender las fortalezas y debilidades de cada una y elegir la que mejor se adapte a las necesidades del proyecto. Ya sea optando por la flexibilidad de CSS, la conveniencia de Bootstrap o la precisión de Tailwind, cada herramienta ofrece un camino hacia la creación de interfaces web efectivas y atractivas.</p>
+            <p class="frase"><samp>"Al explorar las diferentes opciones para el desarrollo front-end, hemos adquirido una comprensión más profunda de cómo estas librerías pueden influir en la creación de experiencias digitales impactantes y funcionales."</samp></p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

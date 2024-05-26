@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="semana1.html" onclick="seleccionar()">SEM1</a></li>
+                    <li><a href="semana2.html" onclick="seleccionar()">SEM2</a></li>
+                    <li><a href="semana3.html" onclick="seleccionar()">SEM3</a></li>
+                    <li><a href="semana4.html" onclick="seleccionar()">SEM4</a></li>
+                    <li><a href="semana5.html" onclick="seleccionar()">SEM5</a></li>
+                    <li><a href="semana6.html" onclick="seleccionar()">SEM6</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION definicion o introduccion -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SEM 2 - ESTRUCTURA HTML Y XML</h2>
+            <p class="justificado"><span>HTML (HyperText Markup Language)</span> y <span>XML (eXtensible Markup Language)</span> son lenguajes de marcado utilizados para estructurar y transportar datos en la web. HTML se centra en la presentación de datos para su visualización en navegadores web, mientras que XML se utiliza principalmente para almacenar y transportar datos de manera estructurada y legible tanto para humanos como para máquinas.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Componentes</h3>
+                    <ul>
+                        <li>
+                            <strong>Atributos:</strong>
+                            Proporcionan información adicional sobre los elementos, especificando propiedades y comportamientos.
+                        </li>
+                        <li>
+                            <strong>Encabezados:</strong>
+                            Encabezados (h1, h2) definen la jerarquía del contenido. DOCTYPE indica la versión del documento.
+                        </li>
+                        <li>
+                            <strong>comentarios:</strong>
+                            Notas dentro del código que no son procesadas por el navegador o parser.
+                        </li>
+                        <li>
+                            <strong>Nesting (Anidamiento):</strong>
+                            Colocar elementos dentro de otros elementos, creando una estructura jerárquica.
+                        </li>
+                        <li>
+                            <strong>Prolog:</strong>
+                            En XML, es una declaración opcional al comienzo del documento con información sobre la versión y codificación.
+                        </li>
+                        <li>
+                            <strong>CDATA Sections:</strong>
+                            Permiten incluir bloques de texto que no serán tratados como código
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Componente principal -->
+                <div class="col">
+                    <h3>Componente Principal: Elementos (Tags)</h3>
+                    <div class="contenedor-intereses">
+                        <p class="justificado">En ambos HTML y XML, los elementos son la unidad básica de construcción. Están definidos por etiquetas de apertura y cierre que encapsulan el contenido y los atributos.</p>
+                        <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2021/12/aprender-html-1024x512.png" alt="Imagen HTML" class="imagen">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+    <!-- SECCION COMPONENTES -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Diferencias</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>HTML</h3>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Estructura</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">HTML se utiliza para definir la estructura y la presentación del contenido en una página web. Los elementos HTML organizan el contenido de manera jerárquica, permitiendo que los navegadores web interpreten y muestren la información de forma coherente y visualmente atractiva. Por ejemplo, las etiquetas header, nav, main, footer, entre otras, ayudan a estructurar las secciones de una página web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Sinntaxis de Elementos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado"> Los elementos HTML son predefinidos y cada uno tiene un propósito específico. Por ejemplo, div se utiliza para crear divisiones o secciones en una página, p para párrafos de texto, a para enlaces, y img para imágenes. Esta estandarización facilita la creación y el mantenimiento de páginas web, ya que los desarrolladores saben qué esperar de cada elemento.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Atributos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Los atributos en HTML son específicos y predefinidos para cada elemento. Por ejemplo, class y id se utilizan para identificar elementos y aplicar estilos CSS, src se utiliza en elementos img para especificar la ruta de la imagen, y href se utiliza en elementos a para especificar la URL del enlace. Estos atributos añaden funcionalidad y propiedades adicionales a los elementos HTML.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>XML</h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Estructura</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">XML se utiliza para definir la estructura y el almacenamiento de datos de manera que sea legible tanto para humanos como para máquinas. Los elementos XML encapsulan datos, proporcionando un formato estandarizado para el intercambio de información entre diferentes sistemas. La estructura de XML es más flexible, ya que los nombres de los elementos y la jerarquía de los datos pueden ser definidos por el usuario según sus necesidades específicas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Sintaxis de Elementos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Los elementos XML no están predefinidos y pueden ser personalizados por el usuario. Los nombres de los elementos en XML deben seguir ciertas reglas de sintaxis, como ser sensibles a mayúsculas y minúsculas, no comenzar con un número, y no contener espacios. Esta flexibilidad permite a los usuarios crear estructuras de datos que se adapten exactamente a sus necesidades.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Atributos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Los atributos en XML son definidos por el usuario según sus necesidades. Los atributos proporcionan información adicional sobre los elementos y pueden ser utilizados para describir características específicas de los datos. La flexibilidad en la definición de atributos permite a los usuarios añadir detalles precisos y relevantes a los elementos XML.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Reflexión -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>REFLEXIÓN</h2>
+            <p class="justificado"><span>Comprender la estructura de HTML y XML es crucial para trabajar eficazmente con datos en la web.</span> HTML permite organizar y presentar información de manera coherente y atractiva para los usuarios, mientras que XML proporciona un formato flexible y estandarizado para almacenar y transferir datos entre diferentes sistemas. Ambos lenguajes de marcado, aunque distintos en sus propósitos, comparten principios fundamentales que facilitan la creación de documentos bien estructurados y funcionales. No debes olvidar:</p>
+
+            <div class="galeria">
+                <!--Comienzo de las imagenes-->
+                <div class="proyecto">
+                    <img src="https://www.ibiblio.org/pub/Linux/docs/LuCaS/Manuales-LuCAS/doc-curso-html/doc-curso-html/img/fig8-17.png" alt="">
+                    <div class="overlay">
+                        <h3>Correcta anidación y cierre de etiquetas </h3>
+                        <p>Es esencial para evitar errores de sintaxis</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://www.creadigma.com/wp-content/uploads/2020/07/Creadigma_Atributos_HTML.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Uso adecuado de atributos</h3>
+                        <p>Para añadir información y funcionalidad a los elementos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://keepcoding.io/wp-content/uploads/2023/12/image-12.png" alt="">
+                    <div class="overlay">
+                        <h3>Comentarios</h3>
+                        <p>Para mantener un código legible y fácil de mantener</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONCLUSIÓN</h2>
+            <p class="justificado">Entender y utilizar correctamente las estructuras de HTML y XML permite a los desarrolladores y diseñadores web crear aplicaciones y sitios web robustos y eficientes. HTML se enfoca en la presentación y estructura visual, mientras que XML asegura que los datos sean estructurados y transportables. Ambos lenguajes son fundamentales para la comunicación de datos en la web y el desarrollo de aplicaciones interoperables.</p>
+            <p class="frase"><samp>"Estructurar con precisión en HTML y XML no solo facilita la presentación y el transporte de datos, sino que también construye la base para una web más organizada y accesible."</samp></p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

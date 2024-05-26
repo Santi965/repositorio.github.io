@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="semana1.html" onclick="seleccionar()">SEM1</a></li>
+                    <li><a href="semana2.html" onclick="seleccionar()">SEM2</a></li>
+                    <li><a href="semana3.html" onclick="seleccionar()">SEM3</a></li>
+                    <li><a href="semana4.html" onclick="seleccionar()">SEM4</a></li>
+                    <li><a href="semana5.html" onclick="seleccionar()">SEM5</a></li>
+                    <li><a href="semana6.html" onclick="seleccionar()">SEM6</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION definicion o introduccion -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SEM 5 - NODE.JS</h2>
+            <p class="justificado"><span>Node.js es un entorno de ejecución de JavaScript del lado del servidor que utiliza el motor V8 de Google Chrome.</span> Permite a los desarrolladores crear aplicaciones web altamente escalables y de alto rendimiento utilizando JavaScript en el lado del servidor.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Componentes</h3>
+                    <ul>
+                        <li>
+                            <strong>Gestión de paquetes:</strong>
+                            Node.js cuenta con npm (Node Package Manager), el mayor ecosistema de paquetes de software del mundo, que facilita la instalación, actualización y gestión de dependencias de proyectos.
+                        </li>
+                        <li>
+                            <strong>Módulos integrados:</strong>
+                            Incluye una variedad de módulos integrados que proporcionan funcionalidades básicas para el desarrollo de aplicaciones, como manejo de archivos, HTTP, URL, entre otros.
+                        </li>
+                        <li>
+                            <strong>API de eventos:</strong>
+                            Node.js utiliza un sistema de eventos que permite la emisión y escucha de eventos, lo que facilita la creación de aplicaciones altamente interactivas y en tiempo real.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Componente principal -->
+                <div class="col">
+                    <h3>Principal Componente</h3>
+                    <div class="contenedor-intereses">
+                        <p class="justificado">Node.js permite ejecutar código JavaScript en el servidor, lo que significa que los desarrolladores pueden crear aplicaciones web completas utilizando JavaScript tanto en el lado del cliente como en el servidor. Esto simplifica el desarrollo y permite compartir código entre el cliente y el servidor.</p>
+                        <img src="https://kinsta.com/wp-content/uploads/2021/03/Nodejs-Architecture.png" alt="Imagen HTML" class="imagen">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+    <!-- SECCION COMPONENTES -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Características</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3></h3>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Asincronismo</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Utiliza un modelo de E/S no bloqueante y asíncrono, lo que permite manejar múltiples solicitudes simultáneamente sin bloquear el hilo de ejecución.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Escalabilidad</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Es altamente escalable debido a su naturaleza de manejo de eventos y su capacidad para manejar un gran número de conexiones simultáneas de manera eficiente.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Velocidad</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Gracias al motor V8 de Google Chrome, Node.js es conocido por su alta velocidad de ejecución de código JavaScript.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Comunidad activa</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Cuenta con una comunidad de desarrolladores activa y un amplio ecosistema de herramientas y bibliotecas que facilitan el desarrollo de aplicaciones.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Flexibilidad</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Es flexible y versátil, lo que permite crear una variedad de aplicaciones, desde simples servidores web hasta aplicaciones de tiempo real y API RESTful.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Facilidad de aprendizaje</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Al utilizar JavaScript en ambos lados, Node.js simplifica el desarrollo web al permitir a los desarrolladores utilizar un solo lenguaje de programación para el frontend y el Back-End.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Reflexión -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>REFLEXIÓN</h2>
+            <p class="justificado"><span>Node.js</span> ha revolucionado la forma en que se desarrollan aplicaciones web al permitir a los desarrolladores utilizar JavaScript tanto en el lado del cliente como en el servidor, lo que facilita la creación de aplicaciones altamente escalables y de alto rendimiento. Por lo que es crucial recordar: </p>
+
+            <div class="galeria">
+                <!--Comienzo de las imagenes-->
+                <div class="proyecto">
+                    <img src="https://community.listopro.com/content/images/2023/02/image-2.png" alt="">
+                    <div class="overlay">
+                        <h3>La Naturaleza asíncrona de Node.js</h3>
+                        <p>Para manejar múltiples solicitudes simultáneamente sin bloquear el hilo de ejecución.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://www.boardinfinity.com/blog/content/images/2022/11/OocV9.png" alt="">
+                    <div class="overlay">
+                        <h3>NPM (Node Package Manager)</h3>
+                        <p>Gestor de paquetes predeterminado para Node.js y el ecosistema de JavaScript en general.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://aprendeinformaticas.com/wp-content/uploads/2022/09/Node.JS-Use-Cases-Cover-Image-1200x720-1.png" alt="">
+                    <div class="overlay">
+                        <h3>La Versatilidad y escalabilidad de Node.js</h3>
+                        <p>Para el desarrollo de aplicaciones web.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONCLUSIÓN</h2>
+            <p class="justificado">Node.js ha transformado el panorama del desarrollo web al permitir a los desarrolladores utilizar JavaScript tanto en el lado del cliente como en el servidor, lo que simplifica el desarrollo, mejora la eficiencia y facilita la creación de aplicaciones web altamente escalables y de alto rendimiento.</p>
+            <p class="frase"><samp>"Con Node.js, el poder de JavaScript se expande más allá del navegador, ofreciendo un ecosistema completo para el desarrollo de aplicaciones web modernas y escalables."</samp></p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

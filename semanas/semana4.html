@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="semana1.html" onclick="seleccionar()">SEM1</a></li>
+                    <li><a href="semana2.html" onclick="seleccionar()">SEM2</a></li>
+                    <li><a href="semana3.html" onclick="seleccionar()">SEM3</a></li>
+                    <li><a href="semana4.html" onclick="seleccionar()">SEM4</a></li>
+                    <li><a href="semana5.html" onclick="seleccionar()">SEM5</a></li>
+                    <li><a href="semana6.html" onclick="seleccionar()">SEM6</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION definicion o introduccion -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SEM 4 - FRONT-END CON JAVASCRIPT</h2>
+            <p class="justificado"><span>JavaScript es un lenguaje de programación utilizado principalmente para crear contenido interactivo en páginas web. </span>Es un componente esencial del desarrollo front-end, permitiendo la manipulación dinámica de elementos HTML, interacciones del usuario y comunicación con servidores.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Componentes</h3>
+                    <ul>
+                        <li>
+                            <strong>Gestión de formularios:</strong>
+                            JavaScript permite la validación de datos en tiempo real y el envío asincrónico de formularios sin recargar la página.
+                        </li>
+                        <li>
+                            <strong>Animaciones y efectos visuales:</strong>
+                            Se pueden crear animaciones suaves y efectos visuales atractivos utilizando bibliotecas como GreenSock o CSS animaciones con JavaScript.
+                        </li>
+                        <li>
+                            <strong>Características de UI/UX:</strong>
+                            Implementación de funcionalidades como barras de desplazamiento personalizadas, menús desplegables, y otros elementos de interfaz de usuario que mejoran la experiencia del usuario.
+                        </li>
+                        <li>
+                            <strong>Integración de APIs:</strong>
+                            Acceso a servicios externos como mapas, redes sociales, y almacenamiento en la nube para enriquecer la funcionalidad de la aplicación web.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Componente principal -->
+                <div class="col">
+                    <h3>JavaScript en Front-End</h3>
+                    <div class="contenedor-intereses">
+                        <p class="justificado">El corazón del desarrollo front-end con JavaScript radica en su capacidad para agregar interactividad dinámica a las páginas web. Esto incluye la manipulación del DOM (Document Object Model) para actualizar contenido de forma dinámica, la gestión de eventos para responder a las acciones del usuario, y la integración de APIs para acceder a funcionalidades del navegador y servicios externos.</p>
+                        <img src="https://rockcontent.com/es/wp-content/uploads/sites/3/2020/06/principales-tipos-de-contenidos-interactivos-1024x538.png.webp" alt="Imagen HTML" class="imagen">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+
+    <!-- SECCION COMPONENTES -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Características</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3></h3>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Interactividad dinámica</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript permite crear elementos en páginas web que responden a las acciones del usuario, como hacer clic en botones o desplazarse por una página, lo que hace que la experiencia del usuario sea más dinámica y atractiva.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Manipulación del DOM</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript facilita la modificación de la estructura, el estilo y el contenido de una página web en tiempo real, lo que permite actualizar y cambiar la apariencia de la página según las acciones del usuario.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4></h4>
+                        <span class="casa">Gestión de eventos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript permite controlar y responder a eventos del navegador, como clics de ratón, pulsaciones de teclas y cambios en el tamaño de la ventana, lo que permite crear interacciones complejas y responsivas en una página web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Comunicación con el servidor</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript permite realizar solicitudes al servidor de manera asíncrona, lo que significa que la página puede actualizarse o cambiar partes específicas sin tener que recargarla por completo, lo que mejora la velocidad y la eficiencia de la aplicación web.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Validación de formularios</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript permite validar los datos ingresados por los usuarios en formularios web en tiempo real, proporcionando retroalimentación instantánea sobre la precisión de los datos antes de enviarlos al servidor, lo que ayuda a prevenir errores y mejorar la experiencia del usuario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa">Creación de aplicaciones web completas</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript se utiliza en el desarrollo de aplicaciones web completas, conocidas como Single Page Applications (SPA), que ofrecen una experiencia similar a la de una aplicación de escritorio al permitir la actualización de contenido sin necesidad de cargar una nueva página.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Reflexión -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>REFLEXIÓN</h2>
+            <p class="justificado"><span>JavaScript desempeña un papel fundamental en la creación de experiencias web dinámicas e interactivas.</span> Su versatilidad y potencia lo convierten en una herramienta indispensable para desarrolladores front-end. Sin embargo, es importante recordar que un uso excesivo o inadecuado de JavaScript puede afectar negativamente al rendimiento y la accesibilidad de la página web. Por lo cual no olvidar: </p>
+
+            <div class="galeria">
+                <!--Comienzo de las imagenes-->
+                <div class="proyecto">
+                    <img src="https://thumbs.dreamstime.com/b/icono-de-rendimiento-optimizaci%C3%B3n-engranajes-vector-simple-sobre-fondo-blanco-aislado-el-se-utiliza-en-dise%C3%B1o-y-desarrollo-220022466.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Optimización del rendimiento</h3>
+                        <p>Para garantizar una carga rápida de la página</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2620/2620620.png" alt="">
+                    <div class="overlay">
+                        <h3>Accesibilidad</h3>
+                        <p>Para garantizar que todos los usuarios puedan interactuar con la aplicación de manera efectiva.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://i.pinimg.com/736x/95/e3/f4/95e3f47087f89d02dcbdce0b349eb94b.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Seguridad</h3>
+                        <p>Para proteger la aplicación contra vulnerabilidades y ataques maliciosos.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONCLUSIÓN</h2>
+            <p class="justificado">En el desarrollo front-end, JavaScript se erige como un pilar fundamental que impulsa la interactividad y la dinámica en las páginas web modernas. Su capacidad para crear experiencias de usuario ricas y personalizadas lo convierte en una herramienta invaluable para los desarrolladores, aunque se debe tener cuidado en su uso para garantizar un rendimiento óptimo y una experiencia accesible para todos los usuarios.</p>
+            <p class="frase"><samp>"Frente a la evolución constante del desarrollo web, JavaScript sigue siendo el motor que impulsa la innovación y la interactividad en la experiencia del usuario en línea."</samp></p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
