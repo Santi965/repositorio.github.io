@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="../index.html">SANTI</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="semana1.html" onclick="seleccionar()">SEM1</a></li>
+                    <li><a href="semana2.html" onclick="seleccionar()">SEM2</a></li>
+                    <li><a href="semana3.html" onclick="seleccionar()">SEM3</a></li>
+                    <li><a href="semana4.html" onclick="seleccionar()">SEM4</a></li>
+                    <li><a href="semana5.html" onclick="seleccionar()">SEM5</a></li>
+                    <li><a href="semana6.html" onclick="seleccionar()">SEM6</a></li>
+                    <li><a href="semana10.html" onclick="seleccionar()">SEM10</a></li>
+                    <li><a href="semana11.html" onclick="seleccionar()">SEM11</a></li>
+                    <li><a href="semana12.html" onclick="seleccionar()">SEM12</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION definicion o introduccion -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SEM 10 - HOOKS</h2>
+            <p class="justificado"><span>Hooks de React: </span>Los Hooks son una característica introducida en React
+                16.8 que permiten usar el estado y otras características de React sin escribir una clase. A
+                continuación, se describen algunos de los Hooks más utilizados y sus funcionalidades.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Hooks Principales</h3>
+                    <ul>
+                        <li>
+                            <strong>useState:</strong>
+                            Manejo del Estado
+                        </li>
+                        <li>
+                            <strong>useEffect:</strong>
+                            Efectos Secundarios
+                        </li>
+                        <li>
+                            <strong>useContext:</strong>
+                            Contexto Global
+                        </li>
+                        <li>
+                            <strong>useReducer:</strong>
+                            Estado Avanzado
+                        </li>
+                        <li>
+                            <strong>useCallback:</strong>
+                            Funciones Memorizadas
+                        </li>
+                        <li>
+                            <strong>useMemo:</strong>
+                            Valores Memorizados
+                        </li>
+                        <li>
+                            <strong>useRef:</strong>
+                            Referencias a Elementos
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Componente principal -->
+                <div class="col">
+                    <h3>useState: Manejo del Estado</h3>
+                    <div class="contenedor-intereses">
+                        <p class="justificado">El Hook useState es fundamental para manejar el estado en componentes
+                            funcionales de React. Permite declarar una variable de estado que React controlará y
+                            actualizará automáticamente cuando sea necesario. Es especialmente útil para mantener y
+                            gestionar datos dinámicos en la interfaz de usuario.</p>
+                        <img src="https://reactjs.org/logo-og.png" alt="Imagen React" class="imagen">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECCION COMPONENTES -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Componentes</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3></h3>
+                    <div class="item izq">
+                        <h4>useState</h4>
+                        <span class="casa">Manejo del Estado</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useState es fundamental para manejar el estado en componentes
+                            funcionales de React. Permite declarar una variable de estado que React controlará y
+                            actualizará automáticamente cuando sea necesario. Es especialmente útil para mantener y
+                            gestionar datos dinámicos en la interfaz de usuario.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>useEffect</h4>
+                        <span class="casa">Efectos Secundarios</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useEffect permite realizar efectos secundarios en componentes
+                            funcionales de React, como la manipulación del DOM, la suscripción a eventos y la gestión de
+                            temporizadores. Se ejecuta después de que el componente se renderiza y puede configurarse
+                            para ejecutarse nuevamente solo cuando ciertas dependencias cambian.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>useContext</h4>
+                        <span class="casa">Contexto Global</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useContext permite acceder al contexto global en React sin
+                            necesidad de pasar props manualmente a través del árbol de componentes. Es útil para
+                            compartir datos como el tema de la interfaz o el estado del usuario autenticado entre
+                            múltiples componentes.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3></h3>
+                    <div class="item der">
+                        <h4>useReducer</h4>
+                        <span class="casa">Estado Avanzado</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useReducer es una alternativa al useState para manejar el estado
+                            en componentes funcionales de React. Es útil para gestionar estados más complejos y con
+                            múltiples subvalores. Se basa en una función reductora que toma el estado actual y una
+                            acción, y devuelve un nuevo estado.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>useCallback</h4>
+                        <span class="casa">Funciones Memorizadas</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useCallback permite memorizar funciones en React, evitando su
+                            recreación en cada renderizado. Esto es útil para optimizar el rendimiento cuando se pasan
+                            funciones a componentes hijos que dependen de funciones memoizadas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>useMemo</h4>
+                        <span class="casa">Valores Memorizados</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useMemo permite memorizar valores calculados en React, evitando
+                            su recalculación en cada renderizado. Es útil para optimizar el rendimiento en cálculos
+                            costosos que dependen de datos que no cambian frecuentemente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>useRef</h4>
+                        <span class="casa">Referencias a Elementos</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">El Hook useRef permite crear referencias a elementos en React, lo que
+                            permite acceder a sus propiedades y métodos directamente. Es útil para manipular el DOM de
+                            manera directa y para almacenar valores persistentes entre renderizados.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION Reflexión -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Reflexión</h2>
+            <p class="justificado"><span>Dominar los Hooks de React es esencial para construir aplicaciones que no solo
+                    sean funcionales, sino también eficientes y mantenibles.</span> El conocimiento de Hooks como
+                useState, useEffect y useContext proporciona la base necesaria para manejar el estado, realizar efectos
+                secundarios y gestionar el contexto global en aplicaciones React. Además, comprender Hooks avanzados
+                como useReducer, useCallback y useMemo garantiza que las aplicaciones sean optimizadas y escalables. En
+                el desarrollo moderno, estas habilidades permiten a los desarrolladores crear aplicaciones dinámicas y
+                responsivas que se adaptan a las necesidades cambiantes de los usuarios. Por lo cual no olvidar:</p>
+
+            <div class="galeria">
+                <!--Comienzo de las imagenes-->
+                <div class="proyecto">
+                    <img src="https://www.tutorialswebsite.com/wp-content/uploads/useeffect-hooks-in-reactjs-840x473.jpg" alt="">
+                    <div class="overlay">
+                        <h3>useState</h3>
+                        <p>Para el manejo del estado</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2023/06/react-hooks-must-be-called-in-a-react-function-component-or-a-custom-react-hook-function.jpg" alt="">
+                    <div class="overlay">
+                        <h3>useEffect</h3>
+                        <p>Para efectos secundarios</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/seo/6393057/og_image/optimized/0120-Stale-while-revalidate_Data_Fetching_with_React_Hooks-Waldek_Social-2bf46136aefaebe37934c89c0820482b.png" alt="">
+                    <div class="overlay">
+                        <h3>useContext</h3>
+                        <p>Para el contexto global</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Conclusión</h2>
+            <p class="justificado">Dominar los Hooks de React es esencial para cualquier desarrollador que aspire a
+                crear aplicaciones modernas, eficientes y mantenibles. El conocimiento profundo de Hooks como useState,
+                useEffect y useContext proporciona la base necesaria para manejar el estado, realizar efectos
+                secundarios y gestionar el contexto global en componentes funcionales de React, mientras que la
+                comprensión de Hooks avanzados como useReducer, useCallback y useMemo asegura que las aplicaciones sean
+                optimizadas, escalables y capaces de manejar complejidades mayores. En el desarrollo moderno, estas
+                habilidades no solo permiten la innovación, sino que también garantizan la adaptabilidad a las
+                necesidades cambiantes de los usuarios, ofreciendo experiencias web dinámicas y responsivas.</p>
+            <p class="frase"><samp>"Al dominar los Hooks de React, construimos cimientos sólidos que nos permiten
+                    diseñar y desarrollar aplicaciones innovadoras y eficientes para el futuro digital."</samp></p>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#sobremi" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 - SANTI</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
