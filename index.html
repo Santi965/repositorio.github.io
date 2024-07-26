@@ -20,7 +20,7 @@
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CONTENIDO</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">CUADERNO</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">FRASE</a></li>
                 </ul>
@@ -33,21 +33,59 @@
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/perfil.jpg" alt="">
+        <div class="contenido">
+            <div class="introduccion">
+                <div class="contenido-introduccion">
+                    <h2 class="intro">Introducción</h2>
+                    <p>Bienvenido al curso de Desarrollo de Aplicaciones Web. Este curso está diseñado para proporcionarte las habilidades y conocimientos necesarios para crear aplicaciones web modernas y dinámicas. A lo largo de este curso, aprenderás sobre tecnologías front-end y back-end, y cómo integrarlas para desarrollar aplicaciones completas y funcionales.</p>
+                    <p>Empezaremos con los conceptos básicos de HTML, CSS y JavaScript, y luego avanzaremos hacia frameworks y herramientas más avanzadas como React, Node.js y bases de datos. Al final del curso, tendrás la capacidad de construir y desplegar tu propia aplicación web.</p>
+                </div>
             </div>
-            <h1>JOSE SANTIVAÑEZ</h1>
-            <h2>Estudiante de Ingeniería de Sistemas</h2>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/perfil.jpg" alt="Foto de perfil de Jose Santivañez">
+                </div>
+                <h1>JOSE SANTIVAÑEZ</h1>
+                <h2>Estudiante de Ingeniería de Sistemas</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </section>
+    
+    <style>
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            height: 100vh; /* Para asegurar que las divs ocupen toda la altura de la pantalla */
+        }
+        .introduccion {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contenido-introduccion {
+            text-align: justify;
+        }
+        .contenedor-img img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .redes a {
+            margin: 0 10px;
+        }
+        .intro {
+            text-align: center;
+        }
+    </style>
 
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
@@ -127,12 +165,6 @@
                     </div>
                 </div>
             </div>
-            <button>
-                <a href="CV/cv.pdf" download="cv.pdf">
-                    Descargar CV <i class="fa-solid fa-download"></i>
-                    <span class="overlay"></span>
-                </a>
-            </button>
         </div>
     </section>
 
@@ -236,33 +268,42 @@
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2>CONTENIDO</h2>
             <div class="fila">
                 <div class="col izquierda">
-                    <h3>Educación</h3>
+                    <h3></h3><!--Lado derecho-->
                     <div class="item izq">
-                        <h4>Ingeniería de Sistemas</h4>
-                        <span class="casa">Universidad Nacional del Centro del Perú</span>
-                        <span class="fecha">2019 - 2024</span>
-                        <p class="justificado">Estudiante de la Universidad Nacional del Centro del Perú (UNCP). Durante mi formación, adquirí sólidas competencias en el análisis, diseño, desarrollo e implementación de sistemas de software. Desarrollé habilidades en programación orientada a objetos, bases de datos, redes informáticas y gestión de proyectos. Además, obtuve experiencia en metodologías ágiles y buenas prácticas de ingeniería de software.</p>
+                        <h4>SEMANA 1</h4>
+                        <span class="casa">TECNOLOGÍAS WEB</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Las tecnologías web son el conjunto de herramientas, lenguajes y protocolos que permiten la creación, desarrollo y funcionamiento de aplicaciones y sitios web. A continuación, se desglosan los componentes fundamentales de estas tecnologías.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Formación Back-End</h4>
-                        <span class="casa">Programa Oracle One</span>
-                        <span class="fecha">Grupo 5 - 2023</span>
-                        <p class="justificado">Completé cursos y desafíos enfocados en lenguajes de programación como Java y Python, bases de datos con Oracle Database y metodologías ágiles de desarrollo de software. Esta experiencia me permitió adquirir habilidades prácticas en el diseño, implementación y mantenimiento de aplicaciones web robustas y escalables.</p>
+                        <h4>SEMANA 2</h4>
+                        <span class="casa">ESTRUCTURA HTML Y XML</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">HTML (HyperText Markup Language) y XML (eXtensible Markup Language) son lenguajes de marcado utilizados para estructurar y transportar datos en la web. HTML se centra en la presentación de datos para su visualización en navegadores web, mientras que XML se utiliza principalmente para almacenar y transportar datos de manera estructurada y legible tanto para humanos como para máquinas.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Inglés</h4>
-                        <span class="casa">Centro de Idiomas - UNCP</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p class="justificado">Complementando mi formación, me dediqué al estudio del idioma inglés, alcanzando el nivel B2 de acuerdo con el Marco Común Europeo de Referencia para las Lenguas (MCER). Esta experiencia me permitió desarrollar habilidades sólidas en comunicación escrita y oral, así como una comprensión profunda de la cultura anglosajona.</p>
+                        <h4>SEMANA 3</h4>
+                        <span class="casa">FRONT-END CON LIBRERÍAS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">En el panorama del desarrollo web front-end, las librerías de estilo como CSS, Bootstrap y Tailwind juegan roles cruciales al definir la apariencia y la interactividad de las páginas web. CSS, siendo el lenguaje fundamental de estilo, ofrece una flexibilidad total para la personalización de la presentación. Bootstrap, por otro lado, proporciona un conjunto completo de componentes y estilos predefinidos, lo que agiliza el proceso de desarrollo y garantiza una apariencia consistente en todas las páginas. Tailwind, con su enfoque basado en clases, permite una personalización detallada y modular, facilitando la creación de interfaces web altamente personalizadas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SEMANA 4</h4>
+                        <span class="casa">FRONT-END CON JAVASCRIPT</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JavaScript es un lenguaje de programación utilizado principalmente para crear contenido interactivo en páginas web. Es un componente esencial del desarrollo front-end, permitiendo la manipulación dinámica de elementos HTML, interacciones del usuario y comunicación con servidores.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -270,34 +311,53 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Cursos Complementarios</h3>
+                    <h3></h3><!--lado izquierdo-->
                     <div class="item der">
-                        <h4>Java y Sprint Boot</h4>
-                        <span class="casa">Alura Latam</span>
-                        <span class="fecha">2023</span>
-                        <p class="justificado">Este curso me brindó una sólida formación en la programación orientada a objetos con Java, incluyendo conceptos fundamentales, estructuras de control, manejo de datos y creación de aplicaciones web robustas. Además, adquirí conocimientos prácticos en el framework Spring Boot, una herramienta esencial para el desarrollo rápido y eficiente de aplicaciones web escalables.</p>
+                        <h4>SEMANA 5</h4>
+                        <span class="casa">NODE.JS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Node.js es un entorno de ejecución de JavaScript del lado del servidor que utiliza el motor V8 de Google Chrome. Permite a los desarrolladores crear aplicaciones web altamente escalables y de alto rendimiento utilizando JavaScript en el lado del servidor.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>SQL con MySQL</h4>
-                        <span class="casa">Alura Latam</span>
-                        <span class="fecha">2023</span>
-                        <p class="justificado">Este curso me permitió adquirir una sólida comprensión del lenguaje de consulta estructurado (SQL), la herramienta indispensable para interactuar con bases de datos relacionales. A través de prácticas y proyectos reales, aprendí a crear, consultar, modificar y eliminar datos de manera eficiente, así como a diseñar y optimizar consultas complejas.</p>
+                        <h4>SEMANA 6</h4>
+                        <span class="casa">REACT</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">React es una biblioteca de JavaScript de código abierto utilizada para construir interfaces de usuario interactivas y reutilizables. Desarrollada por Facebook, React se destaca por su enfoque en la creación de componentes reutilizables y su eficiencia en la actualización del DOM.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Oracle Cloud Infrastructure</h4>
-                        <span class="casa">Alura Latam</span>
-                        <span class="fecha">2023</span>
-                        <p class="justificado">Este curso me brindó una introducción completa a la plataforma Oracle Cloud, incluyendo conceptos fundamentales como la computación en la nube, el almacenamiento de datos, la administración de redes y la seguridad. Además, adquirí conocimientos prácticos en la creación y gestión de recursos en la nube, como instancias de computación, bases de datos y redes virtuales.</p>
+                        <h4>SEMANA 10</h4>
+                        <span class="casa">HOOKS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Los Hooks son una característica introducida en React 16.8 que revolucionó la forma en que manejamos el estado y los efectos en componentes funcionales. Antes de los Hooks, necesitábamos usar clases para acceder al estado y a los ciclos de vida de React. Con los Hooks, podemos hacerlo directamente en componentes de función.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
+                    <div class="item der">
+                        <h4>SEMANA 11</h4>
+                        <span class="casa">NEXT. JS</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">Next.js es un framework de React que ofrece optimizaciones incorporadas, enrutamiento avanzado y soporte CSS. Es ideal para construir aplicaciones web de alta calidad.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>SEMANA 12</h4>
+                        <span class="casa">JavaServer Pages (JSP)</span>
+                        <span class="fecha"></span>
+                        <p class="justificado">JSP es una tecnología basada en Java para crear páginas web dinámicas en el servidor. Permite separar la lógica de negocio del HTML generado.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -361,6 +421,33 @@
                         <div class="overlay">
                             <h3>React</h3>
                             <p>Semana 6</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana10.html" class="semalink">
+                        <img src="img/s2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Hooks</h3>
+                            <p>Semana 10</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana11.html" class="semalink">
+                        <img src="img/s1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Next JS</h3>
+                            <p>Semana 11</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="semanas/semana12.html" class="semalink">
+                        <img src="img/s3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>JavaServer Pages (JSP)</h3>
+                            <p>Semana 12</p>
                         </div>
                     </a>
                 </div>
